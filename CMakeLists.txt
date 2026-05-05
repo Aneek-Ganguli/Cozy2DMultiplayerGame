@@ -26,6 +26,7 @@ add_executable(Cozy2DMultiplayerGame
         ${AG_ENGINE_DIR}/src/entity.cpp
         ${AG_ENGINE_DIR}/src/texture.cpp
         ${AG_ENGINE_DIR}/src/depthBuffer.cpp
+        ${AG_ENGINE_DIR}/src/math.cpp
 )
 
 target_compile_definitions(Cozy2DMultiplayerGame PRIVATE DEBUG=1)
