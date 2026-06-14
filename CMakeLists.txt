@@ -16,10 +16,12 @@ add_subdirectory(lib/glm EXCLUDE_FROM_ALL)
 include_directories(${AG_ENGINE_DIR}/include)
 include_directories(${AG_ENGINE_DIR}/lib/glm)
 include_directories(${AG_ENGINE_DIR}/lib)
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
 
 add_executable(Cozy2DMultiplayerGame
         src/main.cpp
+        src/player.cpp
         ${AG_ENGINE_DIR}/src/window.cpp
         ${AG_ENGINE_DIR}/src/logger.cpp
         ${AG_ENGINE_DIR}/src/vertexInfo.cpp
